@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main: use puts to print Programming is like building a multilingual puzzle
- * and follow by a line
+ * main - use puts to print "Programming is like building a multilingual puzzle
+ * and follow by a line.
  *
- * return: value 0
+ * Return: Always 0
  */
 
 int main(void)
