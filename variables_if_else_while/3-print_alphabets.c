@@ -16,22 +16,19 @@
 
 int main(void)
 {
-	char lower = 'a';
-	char upper = 'A';
+	char ch;
 
-	while (lower <= 'z' || upper <= 'Z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (lower <= 'z')
-		{
-			putchar(lower);
-			lower++;
-		}
-		if (upper <= 'Z')
-		{
-			putchar(upper);
-			upper++;
-		}
+		putchar(ch);
 	}
+
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
+
 	putchar('\n');
+
 	return (0);
 }
