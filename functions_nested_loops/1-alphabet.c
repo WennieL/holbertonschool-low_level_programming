@@ -7,13 +7,13 @@
  * write a function that prints the alphabet
  * in lowercase, followed by a new line
  *
- * Prototype: void print_alphabet(void)
- * to print a to z
+ * Print alphabet - from a to z
+ *
  * can only use _putchar twice in the code
  *
  */
 
-void print_alphabet(char)
+void print_alphabet(void)
 {
 	char  ch;
 
