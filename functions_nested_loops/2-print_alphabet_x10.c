@@ -2,13 +2,11 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 -
- * Prints the 10 times the
- * alphabet in lowercase followed by a newline.
+ * print_alphabet_x10 - Prints the alphabet 10 times
  *
- * Description: This function prints the lowercase alphabet
- * from 'a' to 'z' 10 times
- * followed by a newline character ('\n').
+ * Description: This function prints the alphabet in lowercase,
+ * followed by a new line, 10 times
+ * Each line is terminated by a newline character.
  */
 
 void print_alphabet_x10(void)
