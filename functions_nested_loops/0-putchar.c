@@ -14,7 +14,7 @@
 int main(void)
 {
 	int i;
-	char ch[9] = "_putchar";
+	char letter[9] = "_putchar";
 
 	for (i = 0; i < 9; i++)
 	{
