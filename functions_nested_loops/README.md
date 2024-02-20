@@ -42,3 +42,7 @@ The program should return 0 <br>
 
 Prototype: void print_alphabet(void);
 You can only use _putchar twice in your code <br> 
+<br> 2. 10 x alphabet <br> Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+
+Prototype: void print_alphabet_x10(void);
+You can only use _putchar twice in your code <br>
