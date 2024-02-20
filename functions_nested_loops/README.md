@@ -46,3 +46,9 @@ You can only use _putchar twice in your code <br>
 
 Prototype: void print_alphabet_x10(void);
 You can only use _putchar twice in your code <br>
+<br> 3. islower <br> Write a function that checks for lowercase character.
+
+Prototype: int _islower(int c);
+Returns 1 if c is lowercase
+Returns 0 otherwise
+FYI: The standard library provides a similar function: islower. Run man islower to learn more. <br> 
