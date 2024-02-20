@@ -38,3 +38,7 @@ You do not have to understand the call by reference (address), stack, static var
 <br> 0. _putchar <br> Write a program that prints _putchar, followed by a new line.
 
 The program should return 0 <br> 
+ <br> 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game <br> Write a function that prints the alphabet, in lowercase, followed by a new line.
+
+Prototype: void print_alphabet(void);
+You can only use _putchar twice in your code <br> 
