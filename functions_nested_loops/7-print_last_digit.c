@@ -12,7 +12,6 @@
 
 int print_last_digit(int n)
 {
-	int x;
 
 	if (n == 0)
 	{
@@ -20,7 +19,7 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		x = abs(n) % 10;
-		return '0' + x;
+		int x = abs(n) % 10;
+		return x;
 	}
 }
