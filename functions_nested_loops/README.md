@@ -72,3 +72,7 @@ FYI: The standard library provides a similar function: abs. Run man abs to learn
 
 Prototype: int print_last_digit(int);
 Returns the value of the last digit <br> 
+ <br> 8. I'm federal agent Jack Bauer, and today is the longest day of my life <br> Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+
+Prototype: void jack_bauer(void);
+You can listen to this soundtrack while coding :) <br> 
