@@ -76,3 +76,4 @@ Returns the value of the last digit <br>
 
 Prototype: void jack_bauer(void);
 You can listen to this soundtrack while coding :) <br> 
+ <br> 9. Learn your times table <br> Write a function that prints the 9 times table, starting with 0. <br> <li> <ul> Prototype: void times_table(void); </ul> <ul> Format: see example </ul> <br>
