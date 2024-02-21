@@ -19,7 +19,7 @@ void times_table(void)
 
 		for (j = 1; j < 10; j++)
 		{
-			result = i*j;
+			result = i * j;
 
 			_putchar(',');
 			_putchar(' ');
@@ -40,11 +40,3 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
-
-
-
-
-
-			
-
-
