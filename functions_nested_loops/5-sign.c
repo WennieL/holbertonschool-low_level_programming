@@ -3,13 +3,16 @@
 
 /**
  * print_sign - prints the sign of a number
- * @c: The number to be checked
+ * @n: The number to be checked
  *
  * Description: This function checks the sign of the input number @n
- * If @c is greater than zero, it prints '+' and returns1.
- * If @c is zero, it prints '0' and returns 0.
- * If @c is less than zero, it prtins '-' and returns -1.
+ * If @n is greater than zero, it prints '+' and returns1.
+ * If @n is zero, it prints '0' and returns 0.
+ * If @n is less than zero, it prtins '-' and returns -1.
  *
+ * Return: 1 if @n is greater than zero,
+ * 0 id @ n is zero,
+ * -1 if !n is less than zero
  */
 
 int print_sign(int n)
