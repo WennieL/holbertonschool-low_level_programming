@@ -78,3 +78,5 @@ Prototype: void jack_bauer(void);
 You can listen to this soundtrack while coding :) <br> 
  <br> 9. Learn your times table <br> Write a function that prints the 9 times table, starting with 0. <br> <li> <ul> Prototype: void times_table(void); </ul> <ul> Format: see example </ul> <br>
  <br> 10. a + b <br> Write a function that adds two integers and returns the result. <br> - Prototype: int add(int, int); <br> 
+ <br> 11. 98 Battery Street, the OG <br> Write a function that prints all natural numbers from n to 98, followed by a new line. <br> - Prototype: void print_to_98(int n); <br> - Numbers must be separated by a comma, followed by a space <br> - Numbers should be printed in order <br> - The first printed number should be the number passed to your function
+ <br> - The last printed number should be 98 <br> - You are allowed to use the standard library <br> 
