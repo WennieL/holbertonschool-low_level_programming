@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_to_98 - Print all natural numbers from n to 98
+ * print_to_98 - prints natural numbers
  * @n: The starting number.
  *
  * Numbers must be separated by a comma, followed by a space
@@ -12,7 +12,7 @@
  * The last printed number should be 98
  * standard library is allowed to be used
  *
- * Description: Prints all natural numbers from @n up to 98
+ * Descrption: Print all natural numbers from n to 98
  */
 
 void print_to_98(int n)
