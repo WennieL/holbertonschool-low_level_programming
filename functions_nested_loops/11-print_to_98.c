@@ -3,14 +3,16 @@
 #include "main.h"
 
 /**
- * print_to_98 - print all natural numbers from n to 98
+ * print_to_98 - Print all natural numbers from n to 98
+ * @n: The starting number.
+ *
  * Numbers must be separated by a comma, followed by a space
  * Numbers should be printed in order
  * The first printed number should be the number passed to your function
  * The last printed number should be 98
  * standard library is allowed to be used
  *
- * Return: print all natural numbers from n to 98
+ * Description: Prints all natural numbers from @n up to 98
  */
 
 void print_to_98(int n)
