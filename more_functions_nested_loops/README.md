@@ -6,3 +6,4 @@
 <br> Returns 1 if c is a digit
 <br> Returns 0 otherwise <br>
 2. Collaboration is multiplication <br> Write a function that multiplies two integers. <br> Prototype: int mul(int a, int b); <br>
+<br> 4. I believe in numbers and signs <br> Write a function that prints the numbers, from 0 to 9, followed by a new line. <br> Prototype: void print_most_numbers(void); <br> Do not print 2 and 4 <br> You can only use _putchar twice in your code <br>
