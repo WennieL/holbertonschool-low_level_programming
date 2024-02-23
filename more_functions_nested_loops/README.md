@@ -1,2 +1,7 @@
 <br> C - More functions, more nested loops> <br> General <br>- What are nested loops and how to use them <br>- What is a function and how do you use functions <br>- What is the difference between a declaration and a definition of a function <br>- What is a prototype  <br>- Scope of variables <br>- What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
  <br>- What are header files and how to to use them with #include <br> <br> Requirements <br> General <br>- Allowed editors: vi, vim, emacs <br>- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89 <br>- All your files should end with a new line <br>- A README.md file, at the root of the folder of the project is mandatory                                  t be taken into account <br>- In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own mThe prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h <br>- Dont's forget to push your header file <br> 
+<br> 1. isdigit <br> - Write a function that checks for a digit (0 through 9).
+
+<br> Prototype: int _isdigit(int c);
+<br> Returns 1 if c is a digit
+<br> Returns 0 otherwise <br>
