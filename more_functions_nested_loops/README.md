@@ -5,3 +5,4 @@
 <br> Prototype: int _isdigit(int c);
 <br> Returns 1 if c is a digit
 <br> Returns 0 otherwise <br>
+2. Collaboration is multiplication <br> Write a function that multiplies two integers. <br> Prototype: int mul(int a, int b); <br>
