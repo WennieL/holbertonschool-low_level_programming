@@ -21,17 +21,11 @@ void more_numbers(void)
 	{
 		for (num = 0; num < 15; num++)
 		{
-			if (num < 10)
-			{
-				_putchar((num % 10) + '0');
-			}
-			else
-			{
+			if (num > 9)
 				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
-			}
+			_putchar((num % 10) + '0');
 		}
 
-		printf("\n");
+		_putchar('\n');
 	}
 }
