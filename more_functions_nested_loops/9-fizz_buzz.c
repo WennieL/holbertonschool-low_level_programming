@@ -45,3 +45,9 @@ void fizzBuzz(int num)
 		}
 	}
 }
+
+int main(void)
+{
+    fizzBuzz(100);
+    return (0);
+}
