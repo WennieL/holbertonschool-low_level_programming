@@ -3,24 +3,20 @@
 #include "main.h"
 
 /**
- * FizzBuzz - print numbers from 1 to 100
- * @num: check if @num can be divided by 3 or 5
+ * main - Entry point
  *
- * Description: check if num can be divided by 3 or 5
- * If @num is multiples of three, print Fizz
- * If @num is mutliples of five, print Buzz
- * If @num is mutliples of three and five, print FizzBuzz
- * otherwise, prints @num
+ * Description: Prints numbers from 1 to 100, replacing multiples of
+ * three with "Fizz", multiples of five with "Buzz", and multiples
+ * of both three and five with "FizzBuzz".
  *
- * Return: void
- *
+ * Return: Always 0 (Success)
  */
 
-void fizzBuzz(int num)
+int main(void)
 {
 	int i;
 
-	for (i = 1; i <= num; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
@@ -44,10 +40,6 @@ void fizzBuzz(int num)
 			printf(" ");
 		}
 	}
-}
 
-int main(void)
-{
-    fizzBuzz(100);
-    return (0);
+	return (0);
 }
