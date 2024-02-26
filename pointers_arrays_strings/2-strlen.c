@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -11,5 +12,13 @@
 
 int _strlen(char *s)
 {
-	return strlen(s);
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
 }
