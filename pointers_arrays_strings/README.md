@@ -3,3 +3,4 @@
  <br> 2. This report, by its very length, defends itself against the risk of being read <br> Write a function tha
 t returns the length of a string. <br> Prototype: int _strlen(char *s); <br> FYI: The standard library provides a si
 milar function: strlen. Run man strlen to learn more. <br> 
+ <br> 4. I can only go one way. I've not got a reverse gear <br> Write a function that prints a string, in reverse, followed by a new line. <br> Prototype: void print_rev(char *s); <br> 
