@@ -4,3 +4,4 @@
 t returns the length of a string. <br> Prototype: int _strlen(char *s); <br> FYI: The standard library provides a si
 milar function: strlen. Run man strlen to learn more. <br> 
  <br> 4. I can only go one way. I've not got a reverse gear <br> Write a function that prints a string, in reverse, followed by a new line. <br> Prototype: void print_rev(char *s); <br> 
+ <br> 5. A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes <br>Write a function that reverses a string. <br> Prototype: void rev_string(char *s); <br> 
