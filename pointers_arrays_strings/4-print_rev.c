@@ -12,17 +12,19 @@
 
 void print_rev(char *s)
 {
-	int count = 0;
-	int i;
+	int len = 0, index = 0;
 
-	while (*s != '\0')
+	/* Calculate the length of the string */
+	while (s[index] != '\0')
 	{
-		count++;
+		len++;
+		index++;
 	}
 
-	for (i = count - 1; i >= 0; i--)
+	/* Print the string in reverse */
+	for (index = len - 1; index >= 0; index--)
 	{
-		_putchar(s[i]);
+		_putchar(s[index]);
 	}
 
 	_putchar('\n');
