@@ -7,6 +7,7 @@
  * followed by a new line
  *
  * @n: is the number of elements of the array to be printed
+ * @a: pointer pointed to the first char in an array
  * numbers must be separated by comma, followed by a space
  * numbers should be displayed in the same order
  * as they are stored in the array
