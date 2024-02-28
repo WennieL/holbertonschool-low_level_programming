@@ -20,6 +20,12 @@ char *_strcpy(char *dest, char *src)
 		dest[index] = src[index];
 		index++;
 	}
+        
+	/**
+	 * dest[index] = '\0'
+	 * Since index is incremented after each character is copied in the loop, 
+	 * it naturally points to the next available position in dest where 
+	 * the null terminator should be placed to properly terminate the string.*/
 
 	dest[index] = '\0';
 
