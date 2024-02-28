@@ -18,6 +18,7 @@ void puts_half(char *str)
 
 	while (str[length] != '\0')
 	{
+		/*length here doesn't include '\0'*/
 		length++;
 	}
 
@@ -27,6 +28,7 @@ void puts_half(char *str)
 	}
 	else
 	{
+		/*length + 1 so we can include '\0'*/
 		start_index = (length + 1) / 2;
 	}
 
