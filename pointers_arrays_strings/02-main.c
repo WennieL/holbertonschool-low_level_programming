@@ -36,6 +36,9 @@ int main(void)
         }
         printf("0x%02x", s1[i]);
     }
+    ptr = _strncpy(s1, "", 4);
+    printf("%s\n", s1);
+    printf("%s", ptr);
     printf("\n");
     return (0);
 }
