@@ -15,37 +15,24 @@
 
 char *leet(char *s)
 {
-	int i = 0;
-	char n = '0';
+	char *leet_chars = "aAeEoOtTlL";
+	char *leet_nums = "4433007711";
+	char *ptr = s;
+	int i;
 
-	while (s[i] != '\0')
+	while (*s)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		i = 0;
+		while (leet_chars[i])
 		{
-			s[i] = n + 4;
+			if (*s == leet_chars[i])
+			{
+				*s = leet_nums[i];
+				break;
+			}
+			i++;
 		}
-
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = n + 3;
-		}
-
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = n + 0;
-		}
-
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = n + 7;
-		}
-
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = n + 1;
-		}
-
-		i++;
+		s++;
 	}
-	return (s);
+	return (ptr);
 }
