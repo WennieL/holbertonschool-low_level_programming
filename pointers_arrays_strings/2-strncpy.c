@@ -10,7 +10,7 @@
  * Description: This function copies characters from the string src to the
  * buffer pointed to by dest. At most, n characters are copied from src,
  * and if the length of src is less than n, the remaining characters in dest
- * are filled with null terminators ('\0') to pad the buffer.
+ * are filled with null terminators to pad the buffer.
  *
  * Return: A pointer to the destination string dest.
  */
@@ -19,16 +19,15 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int index = 0;
 
-	while (src[index] != '\0')
+	while (src[index] != '\0' && index < n)
 	{
 		dest[index] = src[index];
 		index++;
 	}
 
-	while (index < n)
+	if (src[index] == '\0')
 	{
 		dest[index] = '\0';
-		index++;
 	}
 
 	return (dest);
