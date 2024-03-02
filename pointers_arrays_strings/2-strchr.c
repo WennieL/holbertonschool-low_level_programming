@@ -24,14 +24,12 @@ char *_strchr(char *s, char c)
 		{
 			return (s);
 		}
-		if (*s != c)
-		{
-			s++;
-		}
-		if (c == '\0')
-		{
-			return ('\0');
-		}
+		s++;
 	}
+	if (c == '\0')
+	{
+		return (s);
+	}
+
 	return (NULL);
 }
