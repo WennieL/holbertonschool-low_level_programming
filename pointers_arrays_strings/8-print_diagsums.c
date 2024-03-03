@@ -14,28 +14,26 @@
 
 void print_diagsums(int *a, int size)
 {
+	int sum_left = 0;
+	int sum_right = 0;
 	int i = 0;
+	int j = 0;
 
 	while (i < size)
 	{
-		int j = 0;
-
-		printf("{");
-
-		while (j < size - 1)
-		{
-			printf("%d, ", *a);
-			j++;
-			a++;
-		}
-		if (j == size - 1)
-		{
-			printf("%d}", *a);
-			a++;
-		}
-
-		printf(",");
-		printf("\n");
+		sum_left += a[(i * size) + j];
 		i++;
+		j++;
 	}
+
+	i = 0;
+	j = (size - 1);
+
+	while (j >= 0)
+	{
+		sum_right += a[(i * size) + j];
+		i++;
+		j--;
+	}
+	printf("%d%d", sum_left, sum_right);
 }
