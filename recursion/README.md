@@ -3,3 +3,4 @@ C - Recursion <br> 0. She locked away a secret, deep inside herself, something s
 3. You mustn't be afraid to dream a little bigger, darling <br> Write a function that returns the factorial of a given number. <br> Prototype: int factorial(int n); <br> If n is lower than 0, the function should return -1 to indicate an error <br> Factorial of 0 is 1 <br> 
  <br> 4. Once an idea has taken hold of the brain it's almost impossible to eradicate <br> Write a function that returns the value of x raised to the power of y. <br> Prototype: int _pow_recursion(int x, int y); <br> If y is lower than 0, the function should return -1
  <br> 
+<br> 5. Your subconscious is looking for the dreamer <br> Write a function that returns the natural square root of a number. <br> Prototype: int _sqrt_recursion(int n); <br> If n does not have a natural square root, the function should return -1 <br> 
