@@ -1,0 +1,1 @@
+<br> C - argc, argv  <br> 0. It ain't what they call you, it's what you answer to <br> If you rename the program, it will print the new name, without having to compile it again <br> You should not remove the path before the name of the program <br> 
