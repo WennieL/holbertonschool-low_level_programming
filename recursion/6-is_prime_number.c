@@ -41,7 +41,7 @@ int is_divisible(int num, int div)
 
 	if (div == num / 2)
 	{
-		return(1);
+		return (1);
 	}
 	return (is_divisible(num, div + 1));
 }
