@@ -4,3 +4,4 @@ C - Recursion <br> 0. She locked away a secret, deep inside herself, something s
  <br> 4. Once an idea has taken hold of the brain it's almost impossible to eradicate <br> Write a function that returns the value of x raised to the power of y. <br> Prototype: int _pow_recursion(int x, int y); <br> If y is lower than 0, the function should return -1
  <br> 
 <br> 5. Your subconscious is looking for the dreamer <br> Write a function that returns the natural square root of a number. <br> Prototype: int _sqrt_recursion(int n); <br> If n does not have a natural square root, the function should return -1 <br> 
+ <br> 6. Inception. Is it possible? <br> Write a function that returns 1 if the input integer is a prime number, otherwise return 0. <br> Prototype: int is_prime_number(int n); <br> 
