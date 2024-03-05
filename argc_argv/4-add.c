@@ -13,24 +13,29 @@
 
 int main(int argc, char *argv[])
 {
+	int i = 0;
 	int sum = 0;
-	int i = 1;
+	int j = 0;
 
-	if (argc <= 1)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
 
 	while (i < argc)
 	{
-		if (!isdigit(argv[i]))
+		while (argv[i][j] != '\0')
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
 		sum += atoi(argv[i]);
 		i++;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
-
