@@ -16,6 +16,7 @@ int main(int argc, char __attribute__((unused)) *argv[])
 	if (argc > 1)
 	{
 		i = argc - 1;
+		printf("%d\n", i);
 	}
-	return (i);
+	return (0);
 }
