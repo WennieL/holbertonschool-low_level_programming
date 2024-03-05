@@ -1,2 +1,3 @@
 <br> C - argc, argv  <br> 0. It ain't what they call you, it's what you answer to <br> If you rename the program, it will print the new name, without having to compile it again <br> You should not remove the path before the name of the program <br> 
 <br> 1. Silence is argument carried out by other means <br> Write a program that prints the number of arguments passed into it. <br> Your program should print a number, followed by a new line <br> 
+ <br> 2. The best argument against democracy is a five-minute conversation with the average voter <br> Write a program that prints all arguments it receives. <br> All arguments should be printed, including the first one <br> Only print one argument per line, ending with a new line<br>
