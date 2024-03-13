@@ -4,7 +4,7 @@
 #include "dog.h"
 
 int _strlen(char *str);
-char *_strcpy(char *dest, char *src);
+char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
 /**
@@ -20,29 +20,30 @@ int _strlen(char *str)
 
 	while (*str != '\0')
 	{
+		str++;
 		len++;
 	}
 	return (len);
 }
 
 /**
- * _strcpy - Copies a string pointed to by src
+ * _strcopy - Copies a string pointed to by src
  * @dest: The buffer storing the string copy
  * @src: The source string
  *
  * Return: The pointer to dest
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int i = 0;
 
-	while (*src != '\0')
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 
@@ -59,7 +60,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog_ptr;
 
-	if (name == NULL || owner == NULL)
+	if (name == NULL || age < 0 || owner == NULL)
 	{
 		return (NULL);
 	}
@@ -76,6 +77,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog_ptr);
 		return (NULL);
 	}
+	new_dog_ptr->name = _strcopy(new_dog_ptr->name, name);
+
+	new_dog_ptr->age = age;
 
 	new_dog_ptr->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (new_dog_ptr->owner == NULL)
@@ -84,10 +88,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog_ptr);
 		return (NULL);
 	}
-
-	new_dog_ptr->name = _strcpy(new_dog_ptr->name, name);
-	new_dog_ptr->age = age;
-	new_dog_ptr->owner = _strcpy(new_dog_ptr->owner, owner);
+	new_dog_ptr->owner = _strcopy(new_dog_ptr->owner, owner);
 
 	return (new_dog_ptr);
 }
