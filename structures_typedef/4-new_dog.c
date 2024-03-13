@@ -3,17 +3,16 @@
 #include <string.h>
 #include "dog.h"
 
-/**
- * new_dog - new type of dog
- * @name: name
- * @age: age
- * @owner:owenr
- * Return: NULL if the function fails
- */
-
 int _strlen(char *str);
 char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
+
+/**
+ * _strlen - Finds the length of a string
+ * @str: The string to be measured
+ *
+ * Return: The length of the string
+ */
 
 int _strlen(char *str)
 {
@@ -25,6 +24,14 @@ int _strlen(char *str)
 	}
 	return (len);
 }
+
+/**
+ * _strcpy - Copies a string pointed to by src
+ * @dest: The buffer storing the string copy
+ * @src: The source string
+ *
+ * Return: The pointer to dest
+ */
 
 char *_strcpy(char *dest, char *src)
 {
@@ -38,6 +45,15 @@ char *_strcpy(char *dest, char *src)
 	dest = '\0';
 	return (dest);
 }
+
+/**
+ * new_dog - Creates a new dog
+ * @name: The name of the dog
+ * @age: The age of the dog
+ * @owner: The owner of the dog
+ *
+ * Return: The new_dog
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -69,9 +85,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	new_dog_ptr->name = _strcpy(name);
+	new_dog_ptr->name = _strcpy(new_dog_ptr->name, name);
 	new_dog_ptr->age = age;
-	new_dog_ptr->owner = _strcpy(owner);
+	new_dog_ptr->owner = _strcpy(new_dog_ptr->owner, owner);
 
 	return (new_dog_ptr);
 }
