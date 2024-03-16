@@ -1,6 +1,11 @@
-int (*get_op_func(char *s))(int, int);   
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-op_functions.c"
+#include "3-calc.h"
 
-op_t ops[] = {
+int (*get_op_func(char *s))(int, int)
+{
+	op_t ops[] = {
         {"+", op_add},
         {"-", op_sub},
         {"*", op_mul},
@@ -8,4 +13,9 @@ op_t ops[] = {
         {"%", op_mod},
         {NULL, NULL}
     };
+
     int i;
+
+
+
+
