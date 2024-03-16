@@ -11,4 +11,4 @@ int main()
 {
 	int result;
 
-	result = get_op_func(char, 
+	result = get_op_func()	
