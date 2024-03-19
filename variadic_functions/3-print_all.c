@@ -12,16 +12,15 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-
 	const char *ptr = format;
 	char *str;
 	int comma;
-	
+
 	va_start(args, format);
 
 	while (ptr && *ptr)
 	{
-		switch(*ptr)
+		switch (*ptr)
 		{
 			case 'c':
 				printf("%c", (char)va_arg(args, int));
@@ -39,22 +38,16 @@ void print_all(const char * const format, ...)
 					printf("%s", str);
 				}
 				else
-				{
 					printf("(nil)");
-				}
 				break;
 			default:
 				comma = 0;
 				break;
 		}
-		if (!comma)
-		{
+		if (!comma && *(ptr + 1))
 			printf(", ");
-		}
 		ptr++;
 	}
 	va_end(args);
 	printf("\n");
 }
-
-
