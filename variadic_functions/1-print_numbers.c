@@ -7,7 +7,7 @@
  * @separator: a string to be printed between numbwers
  * @n: number of intergers passed to the funciton
  *
- * Return: (0) Success
+ * Return: (void)
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
