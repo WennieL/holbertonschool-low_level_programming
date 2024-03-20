@@ -14,12 +14,13 @@ void print_all(const char * const format, ...)
 	va_list args;
 	const char *ptr = format;
 	char *str;
-	int comma;
+	int comma = 0;
 
 	va_start(args, format);
-
 	while (ptr && *ptr)
 	{
+		if (comma)
+			printf(", ");
 		switch (*ptr)
 		{
 			case 'c':
@@ -32,20 +33,21 @@ void print_all(const char * const format, ...)
 				printf("%f", (float)va_arg(args, double));
 				break;
 			case 's':
-				str = va_arg(args, char *);
-				if (str)
+				str = va_arg(args, char*);
+				if (str == NULL)
 				{
-					printf("%s", str);
+					printf("(nil)");
+					break;
 				}
-				printf("(nil)");
+				printf("%s", str);
 				break;
 			default:
 				comma = 0;
-				break;
+				ptr++;
+				continue;
 		}
-		if (!comma && *(ptr + 1))
-			printf(", ");
 		ptr++;
+		comma = 1;
 	}
 	va_end(args);
 	printf("\n");
