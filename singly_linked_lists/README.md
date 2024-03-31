@@ -1,6 +1,6 @@
-# C - Singly linked lists<br>
+# C - Singly linked lists
 
-## Requirements<br>
+## Requirements
 
 ### General
 - Allowed editors: vi, vim, emacs
@@ -26,7 +26,7 @@
 
 ## More Info
 
-###### Please use this data structure for this project:<br>
+###### Please use this data structure for this project:
 
 ```bash
 /**
@@ -45,3 +45,13 @@ typedef struct list_s
 } list_t;
 ```
 
+## Tasks
+
+### [0. Print list] (https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
+###### Write a function that prints all the elements of a list_t list.
+
+- Prototype: size_t print_list(const list_t *h);
+- Return: the number of nodes
+- Format: see example
+- If str is NULL, print [0] (nil)
+- You are allowed to use printf
