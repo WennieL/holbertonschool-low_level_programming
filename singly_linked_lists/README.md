@@ -69,7 +69,7 @@ typedef struct list_s
 - str needs to be duplicated
 - You are allowed to use strdup
 
-### [3. Add node ar the end]()
+### [3. Add node ar the end](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/singly_linked_lists/3-add_node_end.c)
 ##### Write a function that adds a new node at the end of a list_t list.
 
 - Prototype: list_t *add_node_end(list_t **head, const char *str);
