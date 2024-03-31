@@ -1,8 +1,8 @@
-#C - Singly linked lists<br>
+# C - Singly linked lists<br>
 
-##Requirements<br>
+## Requirements<br>
 
-###General
+### General
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, 
   using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -25,9 +25,9 @@
 - All your header files should be include guarded
 
 <br>
-#More Info
+# More Info
 
-######Please use this data structure for this project:<br>
+###### Please use this data structure for this project:<br>
 
 ```bash
 /**
