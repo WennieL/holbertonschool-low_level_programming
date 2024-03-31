@@ -3,6 +3,14 @@
 #include <string.h>
 #include "lists.h"
 
+/**
+ * add_node_end - adds a new node at the end of a list
+ *
+ * @head: pointer to the address of the head of the list
+ * @str: the string add to the new node
+ *
+ * Return: pointer to the element
+ */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
