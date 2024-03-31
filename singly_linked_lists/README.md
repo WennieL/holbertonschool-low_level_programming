@@ -24,8 +24,7 @@
 - Don't forget to push your header file
 - All your header files should be include guarded
 
-<br>
-# More Info
+## More Info
 
 ###### Please use this data structure for this project:<br>
 
