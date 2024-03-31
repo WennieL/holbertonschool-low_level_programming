@@ -47,7 +47,7 @@ typedef struct list_s
 
 ## Tasks
 
-### [0. Print list] (https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
+### [0. Print list](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
 ###### Write a function that prints all the elements of a list_t list.
 
 - Prototype: size_t print_list(const list_t *h);
