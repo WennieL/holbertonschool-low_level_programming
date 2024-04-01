@@ -77,7 +77,7 @@ typedef struct list_s
 - str needs to be duplicated
 - You are allowed to use strdup
 
-### [4. Free list]()
+### [4. Free list](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/singly_linked_lists/4-free_list.c)
 ##### Write a function that frees a list_t list.
 
 - Prototype: void free_list(list_t *head);
