@@ -52,7 +52,7 @@ typedef struct dlistint_s
 
 - Prototype: size_t dlistint_len(const dlistint_t *h);
 
-### [2. Add node]()
+### [2. Add node](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/2-add_dnodeint.c)
 ##### Write a function that adds a new node at the beginning of a dlistint_t list.
 
 - Prototype: dlistint_t *add_dnodeint(dlistint_t **head, const int n);
