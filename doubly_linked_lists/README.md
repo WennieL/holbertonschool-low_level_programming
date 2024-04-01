@@ -47,7 +47,7 @@ typedef struct dlistint_s
 - Prototype: size_t print_dlistint(const dlistint_t *h);
 - Return: the number of nodes
 
-### [1. List length]()
+### [1. List length](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/1-dlistint_len.c)
 ###### Write a function that returns the number of elements in a linked dlistint_t list.
 
 - Prototype: size_t dlistint_len(const dlistint_t *h);
