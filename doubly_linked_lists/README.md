@@ -1,7 +1,7 @@
 # C - Doubly linked lists
 
-### Requirements
-##### General
+## Requirements
+### General
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
 - All your files should end with a new line
@@ -18,7 +18,7 @@
 - Don't forget to push your header file
 - All your header files should be include guarded
 
-### More Info
+## More Info
 ###### Please use this data structure for this project:
 
 ```bash
@@ -39,9 +39,9 @@ typedef struct dlistint_s
 } dlistint_t;
 ```
 
-### Tasks
+## Tasks
 
-##### [0. Print list]()
+### [0. Print list](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/0-print_dlistint.c)
 ###### Write a function that prints all the elements of a dlistint_t list.
 
 - Prototype: size_t print_dlistint(const dlistint_t *h);
