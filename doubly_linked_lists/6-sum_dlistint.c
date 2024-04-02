@@ -11,12 +11,14 @@
  * Return: sum of the n in the list
  */
 
-int sum_dlistint_t(dlistint_t *head)
+int sum_dlistint(dlistint_t *head)
 {
 	int total = 0;
+
 	dlistint_t *current;
+
 	current = malloc(sizeof(dlistint_t));
-	
+
 	current = head;
 
 	if (current == NULL)
