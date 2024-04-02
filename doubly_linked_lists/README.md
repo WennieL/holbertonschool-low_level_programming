@@ -69,7 +69,7 @@ typedef struct dlistint_s
 
 - Prototype: void free_dlistint(dlistint_t *head);
 
-### [5. Get node at index]()
+### [5. Get node at index](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/5-get_dnodeint.c)
 ##### Write a function that returns the nth node of a dlistint_t linked list.
 
 - Prototype: dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
