@@ -3,7 +3,8 @@
 #include <strings.h>
 #include "lists.h"
 
-/**get_dnodeint_at_index - a function that returns the nth
+/**
+ * get_dnodeint_at_index - a function that returns the nth
  * node of a lined list
  *
  * @head: pointer that point to the address of the head of the list
@@ -15,35 +16,19 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *current;
-	current = malloc(sizeof(dlistint_t));
+	unsigned int i = 0;
 
-	unsigned int count = 0;
-	int i = 0;
+	current = head;
 
-	if (head == NULL)
+	if (current == NULL)
 	{
 		return (NULL);
 	}
 
-	current = head;
-
-	while (current[count] != NULL)
+	while (current != NULL && i < index)
 	{
-		count++;
-	}
-
-	while (i < count)
-	{
-		if (current-> next == NULL)
-		{
-			return (NULL);
-		}
-		
-		if (current[i] == index)
-		{
-			return (current->n);
-		}
+		current = current->next;
 		i++;
 	}
-	return (NULL);
+	return (current);
 }
