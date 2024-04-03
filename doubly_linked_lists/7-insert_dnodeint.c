@@ -26,12 +26,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (current != NULL && idx != i)
 	{
-		if (i > idx)
+		if (i < idx)
 		{
-			printf("(nil)");
+			current = current->next;
+			i++;
 		}
-		current = current->next;
-		i++;
 	}
 
 	if (new_node == NULL)
