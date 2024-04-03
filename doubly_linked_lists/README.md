@@ -83,7 +83,7 @@ typedef struct dlistint_s
 - Prototype: int sum_dlistint(dlistint_t *head);
 - if the list is empty, return 0
 
-### [7. Insert at index]()
+### [7. Insert at index](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/7-insert_dnodeint.c)
 ##### Write a function that inserts a new node at a given position.
 
 - Prototype: dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
