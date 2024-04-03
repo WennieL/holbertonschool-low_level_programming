@@ -93,7 +93,7 @@ typedef struct dlistint_s
 
 ##### Your files 2-add_dnodeint.c and 3-add_dnodeint_end.c will be compiled during the correction
 
-### [8. Delete at index]()
+### [8. Delete at index](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/doubly_linked_lists/8-delete_dnodeint.c)
 ##### Write a function that deletes the node at index index of a dlistint_t linked list.
 
 - Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
