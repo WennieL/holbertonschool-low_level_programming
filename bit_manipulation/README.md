@@ -1,7 +1,7 @@
 # C - Bit manipulation
 
 |  A  |  B  | A|B | A&B | A^B | ~A  |
-|-----|-----|-----|-----|-----|-----|
+| --- | --- | -- -| --- | --- | -- -|
 |  0  |  0  |  0  |  0  |  0  |  1  |
 |  0  |  1  |  1  |  0  |  1  |  1  |
 |  1  |  0  |  1  |  0  |  1  |  0  |
@@ -30,7 +30,7 @@
 
 ## Tasks
 
-### [0. 0]()
+### [0. 0](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/0-binary_to_uint.c)
 
 #### Write a function that converts a binary number to an unsigned int.
 - Prototype: unsigned int binary_to_uint(const char *b);
