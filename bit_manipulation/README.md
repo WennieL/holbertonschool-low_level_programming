@@ -48,7 +48,7 @@
 - You are not allowed to use malloc
 - You are not allowed to use the % or / operators
 
-### [2. 10]()
+### [2. 10](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/2-get_bit.c)
 #### Write a function that returns the value of a bit at a given index.
 
 - Prototype: int get_bit(unsigned long int n, unsigned int index);
