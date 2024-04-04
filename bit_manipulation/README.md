@@ -42,7 +42,7 @@
 ### [1 .1](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/1-print_binary.c)
 #### Write a function that prints the binary representation of a number.
 
--Prototype: void print_binary(unsigned long int n);
+- Prototype: void print_binary(unsigned long int n);
 - Format: see example
 - You are not allowed to use arrays
 - You are not allowed to use malloc
