@@ -3,18 +3,19 @@
 #include "main.h"
 
 /**
- * binary_to_unit - coverts a binary number to an unsigned int
- * @b: pointer points to a string of 0 and 1 chars
+ * binary_to_uint - Converts a binary number to an unsigned int.
  *
- * Description: This header file contains a function binary_to_uint
- * that converts a binary number represented as a string of
- * '0' and '1' characters to an unsigned integer.
- * The function takes a pointer b pointing to the binary string as input
+ * @b: Pointer to a string of characters representing a binary number.
  *
- * Return: the converted number, or 0 if
- * there is one or more chars in the string b that is not 0 or 1
- * b is Null
+ * Description:
+ * This function takes a string of characters representing a binary number
+ * and converts it into an unsigned integer. It iterates through each character
+ * in the string, shifting the current value of the integer left by one position
+ * and adding the value of the current bit if it's '1'. If the string contains
+ * characters other than '0' and '1', or if it's NULL, the function returns 0.
  *
+ * Return: The converted unsigned int, or 0 if `b` is NULL or contains
+ *         characters other than '0' and '1'.
  */
 
 unsigned int binary_to_uint(const char *b)
