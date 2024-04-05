@@ -18,8 +18,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	/* 0644 = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH */
-	fp = open(filename, O_WRONLY | O_APPEND, 0644);
+	fp = open(filename, O_WRONLY | O_APPEND);
 	if (fp == -1)
 		return (-1);
 
