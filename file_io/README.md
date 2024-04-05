@@ -67,7 +67,7 @@
   Return 1 if the file exists and -1 if the file does not exist or 
   if you do not have the required permissions to write the file
 
-### [3. cp]()
+### [3. cp](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/file_io/3-cp.c)
 #### Write a program that copies the content of a file to another file.
 - Usage: cp file_from file_to
 - if the number of argument is not the correct one, exit with code 97 and 
