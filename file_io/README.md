@@ -54,7 +54,7 @@
 - if filename is NULL return -1
 - if text_content is NULL create an empty file
 
-### [2. Speak gently, she can hear]()
+### [2. Speak gently, she can hear](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/file_io/2-append_text_to_file.c)
 #### Write a function that appends text at the end of a file.
 
 - Prototype: int append_text_to_file(const char *filename, char *text_content);
