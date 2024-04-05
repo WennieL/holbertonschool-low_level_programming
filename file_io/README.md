@@ -40,7 +40,7 @@
 - if filename is NULL return 0
 - if write fails or does not write the expected amount of bytes, return 0
 
-#### [1. Under the snow]()
+### [1. Under the snow](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/file_io/1-create_file.c)
 #### Create a function that creates a file.
 
 - Prototype: int create_file(const char *filename, char *text_content);
