@@ -28,7 +28,7 @@
 - Don't forget to push your header file
 - All your header files should be include guarded
 
-## Tasks :clipboard:
+## :clipboard: Task
 
 ### [0. 0](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/0-binary_to_uint.c)
 
