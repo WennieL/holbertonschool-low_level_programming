@@ -10,3 +10,14 @@
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
+{
+	int fp;
+	char *buffer;
+	ssize_t fp_read, fp_write;
+
+	if (filename == NULL)
+		return (0);
+
+	fd = fopen(
+
+	
