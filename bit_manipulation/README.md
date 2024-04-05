@@ -7,7 +7,7 @@
 |   1   |   0   |  1  |  0  |  1  |   0   |
 |   1   |   1   |  1  |  1  |  0  |   0   |
 
-## Requirements
+## :white_check_mark: Requirements
 
 #### General
 - Allowed editors: vi, vim, emacs
