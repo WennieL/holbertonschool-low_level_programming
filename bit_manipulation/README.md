@@ -28,7 +28,7 @@
 - Don't forget to push your header file
 - All your header files should be include guarded
 
-## Tasks
+## Tasks :clipboard
 
 ### [0. 0](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/0-binary_to_uint.c)
 
@@ -69,7 +69,7 @@
 - where index is the index, starting from 0 of the bit you want to set
 - Returns: 1 if it worked, or -1 if an error occurred
 
-### [5. 101]()
+### [5. 101](https://github.com/WennieL/holbertonschool-low_level_programming/blob/main/bit_manipulation/5-flip_bits.c)
 #### Write a function that returns the number of bits you would need to flip to get from one number to another.
 
 - Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
