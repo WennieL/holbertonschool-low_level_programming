@@ -7,19 +7,24 @@
 void close_file(int fd);
 
 /**
- * clos_file - closes file descriptors
+ * close_file - closes file descriptors
  * @fd: the file descriptor to be closed
+ *
+ * description: This function closes the file descriptor specified by 'fd'.
+ *              If the closing operation fails, an error message is printed
+ *              to the standard error stream, and the program exits with
+ *              exit code 100.
  */
 
-close_file(int fd)
+void close_file(int fd)
 {
-	int close;
+	int cf;
 
-	close = close(fd);
+	cf = close(fd);
 
-	if (close == -1)
+	if (cf == -1)
 	{
-		dprint(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -31,15 +36,15 @@ close_file(int fd)
  *
  * Return: 0 on success.
  *
- * Description: If the argument count is incorrect - exit code 97.
+ * description: If the argument count is incorrect - exit code 97.
  *              If file_from does not exist or cannot be read - exit code 98.
  *              If file_to cannot be created or written to - exit code 99.
  *              If file_to or file_from cannot be closed - exit code 100.
  */
 
-int main(argc, *argv[])
+int main(int argc, char *argv[])
 {
-	int from_file, to_file, fd_read, fd_write;
+	int file_from, file_to, fd_read, fd_write;
 	char *buffer;
 
 	if (argc != 3)
@@ -49,9 +54,9 @@ int main(argc, *argv[])
 	}
 
 	buffer = malloc(sizeof(char) * 1024);
-	from_file = open(argv[1], O_RDONLY);
-	fd_read = read(from_file, buffer, 1024);
-	file_to = open(argv[2], O_CREAT | O_WRONLY | 0_TRUNC, 0664);
+	file_from = open(argv[1], O_RDONLY);
+	fd_read = read(file_from, buffer, 1024);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
 		if (file_from == -1 || fd_read == -1)
@@ -69,11 +74,12 @@ int main(argc, *argv[])
 			exit(99);
 		}
 
-		fd_read = read(from_file, buffer, 1024);
+		fd_read = read(file_from, buffer, 1024);
 		file_to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (fd_read > 0);
 
 	free(buffer);
 	close_file(file_from);
 	close_file(file_to);
+	return (0);
 }
